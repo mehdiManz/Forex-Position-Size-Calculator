@@ -20,14 +20,6 @@
       background-color: #f0f0f0;
     }
 
-    /* .calc-box {
-      text-align: center;
-      background-color: #ffffff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    } */
-
     h1 {
       font-size: 36px;
       margin-bottom: 20px;
@@ -44,17 +36,30 @@
       border: none;
       margin-left: 20%;
       margin-left: 25%;
-   
     }
 
-    
+    /* Media query for smaller screens */
+    @media (max-width: 768px) {
+      iframe {
+        width: 100%;
+        height: 500px;
+        margin: 0;
+        /* Remove horizontal margin */
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
   </style>
 </head>
 
 <body>
   <div class="container">
-  
-
     <!-- Embed the CashbackForex Position Size Calculator using an iframe -->
     <iframe src="https://www.cashbackforex.com/en/widgets/position-size-calculator?symbol=EURUSD"></iframe>
   </div>
